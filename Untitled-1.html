@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <style>
+        h1 {text-align: center;}
+        h1 {font-size:70;}
+        h1 {font-family: Arial, sans-serif;}
+        h2 {text-align: center;}
+        h2 {font-size:40;}
+        h2 {font-family: Arial, sans-serif;}
+        p {text-align: center;}
+        p {font-size:30;}
+        p {font-family: Arial, sans-serif;}
+        img {display: block; margin-left: auto; margin-right: auto; width: 50%;}
+        </style>   
+    <h1>Apple</h1>
+    <title>Project 😎</title>
+    <style>
+    .topnav {
+        background-color: #000000;
+        overflow: hidden;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .topnav a {
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 25;
+        font-style:normal;
+        font-variant: small-caps;
+        font-family: Arial, sans-serif;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+   
+    img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10cap;
+    }
+
+    body {
+        background-image: url("https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg?w=1380&t=st=1704095728~exp=1704096328~hmac=78b0264ec6a1e7904c3aaa2f0fbd1f01685f4a2a09ea490f3da75bafeb29434d");
+        background-blend-mode: darken;
+        background-size: cover;
+    }
+    
+    .dark-mode{
+        background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149151738.jpg?w=1380&t=st=1704525753~exp=1704526353~hmac=6267af8af9adc81eba29745df85c0af7851992cde5b7e9ac0e7c8d150931a89b");
+        color: white;
+    }
+    button{
+        color: white;
+        width: 200px;
+        height: 30;
+        background-color: #000000;
+        text-decoration: none;
+        font-size: 20;
+        font-style:normal;
+        font-variant: small-caps;
+        font-family: Arial, sans-serif; 
+    }
+    button:hover{
+        background-color: #4CAF50;
+    }
+    .image{
+        position: relative;
+        width: 100%
+
+    }
+    .image:hover{
+        background-image: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693010533609";
+    }
+    .topnav:hover{
+        background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149151738.jpg?w=1380&t=st=1704525753~exp=1704526353~hmac=6267af8af9adc81eba29745df85c0af7851992cde5b7e9ac0e7c8d150931a89b");
+        color: white;
+    }
+</style>
+<body>
+<button onclick="darkmode()">Theme</button>
+<body background="https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg?w=1380&t=st=1704095728~exp=1704096328~hmac=78b0264ec6a1e7904c3aaa2f0fbd1f01685f4a2a09ea490f3da75bafeb29434d"></body>
+
+<div class="topnav">
+    <a href="http://127.0.0.1:3000/Untitled-1.html" class="active">Home</a>
+    <a href="http://127.0.0.1:3000/Untitled-2.html">About</a>
+    <a href="http://127.0.0.1:3000/Untitled-3.html">Book</a>
+    <a href="http://127.0.0.1:3000/Untitled-4.html">Price</a>
+    <a href="http://127.0.0.1:3000/Untitled-5.html">Contact Us</a>
+</div>
+<div class= "image">
+    <img class="image1" src="https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/article/Apple-iPhone-15-Pro-lineup-hero-230912_Full-Bleed-Image.jpg.xlarge.jpg" alt="Apple iPhone ">
+</div>
+        <h2>Enjoy Your iPhone</h2>
+        <p id="p1">With Apple's iPhone, you can make calls, send text messages, and browse the internet. There are many apps available in the App Store, and you can even create your own!</p>
+        <p id="p2">The iPhone 15 and iPhone 15 Plus are smartphones designed, developed, and marketed by Apple Inc. They are the seventeenth and current generation of iPhones, succeeding the iPhone 14 and iPhone 14 Plus. The devices were announced on September 12, 2023, during the Apple Event at Apple Park in Cupertino, California alongside the higher-priced iPhone 15 Pro and 15 Pro Max flagships. Pre-orders began on September 15, 2023, and the devices were made available on September 22, 2023.</p>
+
+
+    </body>
+
+<script>
+
+ function changeColor(event) {
+        var color = '#4CAF50';
+        document.getElementById('p1').style.color = color;
+        document.getElementById('p2').style.color = color;
+    }
+
+    function resetColor(event) {
+        document.getElementById('p1').style.color = '';
+        document.getElementById('p2').style.color = '';
+    }
+
+    document.getElementById('p1').addEventListener('click', changeColor);
+    document.getElementById('p1').addEventListener('mouseover', changeColor);
+    document.getElementById('p1').addEventListener('mouseout', resetColor);
+
+    document.getElementById('p2').addEventListener('click', changeColor);
+    document.getElementById('p2').addEventListener('mouseover', changeColor);
+    document.getElementById('p2').addEventListener('mouseout', resetColor);
+
+</script>
+
+<script>
+    function darkmode(){
+        var element = document.body;
+        element.classList.toggle("topnav:hover");
+    }
+</script>
+</head>
